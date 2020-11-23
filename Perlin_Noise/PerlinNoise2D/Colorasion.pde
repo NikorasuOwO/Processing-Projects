@@ -8,11 +8,28 @@ public static int[] Coloration(float n){
   int b = round(n * 255);
   //int b = 220;
 
-  if(n > 0.51){
+  if(n > 0.45){
   
-  r = round(60 * ninv);
+  r = round(70 * ninv);
   g = round(255 * ninv);
-  b = round(60 * ninv);
+  b = round(70 * ninv);
+  
+  }
+  
+  if ((n > 0.45) && (n <= 0.50)){
+  
+    r = 245;
+    g = 216;
+    b = 119;
+    
+  
+  }
+  
+  if (n > 0.67){
+  
+    r = round(170 * ninv*2);
+    g = round(100 * ninv*2);
+    b = round(2 * ninv*2);
   
   }
 
