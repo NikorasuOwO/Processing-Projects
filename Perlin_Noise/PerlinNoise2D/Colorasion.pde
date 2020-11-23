@@ -1,6 +1,7 @@
 
 public static int[] Coloration(float n){
 
+  float ninv = 1-n;
   
   int r = round(n * 118);
   int g = round(n * 165);
@@ -9,9 +10,9 @@ public static int[] Coloration(float n){
 
   if(n > 0.51){
   
-  r = 50;
-  g = 205;
-  b = 50;
+  r = round(60 * ninv);
+  g = round(255 * ninv);
+  b = round(60 * ninv);
   
   }
 
