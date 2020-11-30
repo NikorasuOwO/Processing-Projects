@@ -3,7 +3,7 @@
 
 void setup(){
 
-  size(1920,1080,P3D);
+  size(1920,1080, P3D);
   background(220,220,220);
   noiseSeed(2);
   
