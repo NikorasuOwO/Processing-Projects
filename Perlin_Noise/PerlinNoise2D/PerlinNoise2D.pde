@@ -3,13 +3,16 @@
 
 void setup(){
 
-  size(1920,1080, P3D);
+
+  size(1280,720);
+
   background(220,220,220);
-  noiseSeed(2);
+ // noiseSeed(2);
+  frameRate(1);
   
 }
 
-int scl = 20;
+int scl = 1;
 float xoff = 0;
 float yoff = 0;
 float nv;
@@ -29,6 +32,7 @@ void draw(){
       g = colorvect[1];
       b = colorvect[2];
       
+      noStroke();
       fill(r,g,b);
       rect(x,y,scl,scl);
       
@@ -36,9 +40,9 @@ void draw(){
       textSize(12);
       text(nv*10,x,y);*/
       
-      xoff += 0.1;
+      xoff += 0.01;
     }
-    yoff+= 0.1;  
+    yoff+= 0.01;  
   }
 
 
