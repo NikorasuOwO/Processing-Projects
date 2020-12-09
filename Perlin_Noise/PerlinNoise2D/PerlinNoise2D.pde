@@ -3,10 +3,10 @@
 
 void setup(){
 
-  size(1280,720);
+  size(800,800);
   background(220,220,220);
- // noiseSeed(2);
-  frameRate(1);
+  //noiseSeed(10);
+  //frameRate();
   
 }
 
