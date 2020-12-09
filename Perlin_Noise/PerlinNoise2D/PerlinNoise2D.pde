@@ -3,7 +3,8 @@
 
 void setup(){
 
-  size(800,800);
+  size(1280,720); //7680 × 4320
+
   background(220,220,220);
   //noiseSeed(10);
   //frameRate();
@@ -43,6 +44,7 @@ void draw(){
     yoff+= 0.01;  
   }
 
-
+  //DESCOMENTANDO ESTA LINEA PUEDES GUARDAR LA IMAGEN//
+saveFrame();
 noLoop();
 }
