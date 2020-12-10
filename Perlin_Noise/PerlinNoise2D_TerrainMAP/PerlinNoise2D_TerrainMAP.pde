@@ -45,6 +45,6 @@ void draw(){
   }
 
   //DESCOMENTANDO ESTA LINEA PUEDES GUARDAR LA IMAGEN//
-saveFrame("terrainimg720pPNG.png");
+//saveFrame("terrainimg720pPNG.png");
 noLoop();
 }

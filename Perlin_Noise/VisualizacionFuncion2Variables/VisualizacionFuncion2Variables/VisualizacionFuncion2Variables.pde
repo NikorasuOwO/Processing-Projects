@@ -1,21 +1,20 @@
-
-
-
 void setup(){
 
-  size(1280,720);
+  size(1280,720,P3D);
   background(220,220,220);
  // noiseSeed(2);
-  frameRate(400);
+  frameRate(60);
   
 }
 
-float scl = 10;
+float scl = 2;
 float xoff = 0;
 float yoff = 0;
 float nv; 
 
 void draw(){
+//translate(-width/2, height/2);
+  
   
   for(float y = 0; y < height ; y = y + scl){
     xoff = 0;
@@ -23,7 +22,7 @@ void draw(){
       
       nv = fnT(xoff,yoff);
       
-      stroke(255,113,231);
+      noStroke();
       fill(nv*255,nv*255,nv*255);
       rect(x,y,scl,scl);
       
@@ -37,14 +36,7 @@ void draw(){
   }
 
 
-//noLoop();
 
 println(yoff);
-
-/*if(yoff > 5){
-
-  scl = scl + 0.2;
-  
-}*/
 
 }
