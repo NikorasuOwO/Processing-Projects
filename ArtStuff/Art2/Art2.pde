@@ -29,8 +29,8 @@ void draw(){
    
    println("r: " + r, " g: " + g , " b: " + b); 
     
-   if (r >= 255 || r <= 0){ i = i * -1; r = random(100,155); }
-   if (g >= 255 || r <= 0){ i = i * -1; g = random(100,155); }
-   if (b >= 255 || r <= 0){ i = i * -1; b = random(100,155); }
+   if (r >= 255 || r <= 0){ i = i * -1; r = random(0,255); }
+   if (g >= 255 || r <= 0){ i = i * -1; g = random(0,255); }
+   if (b >= 255 || r <= 0){ i = i * -1; b = random(0,255); }
 
 }
