@@ -17,7 +17,7 @@ class Snake:
     
     def should_die(self, x, y): # We are passing the next position
         
-        if(x > 800 or y > 800 or x < 0 or y < 0):
+        if(x > 800-40 or y > 800-40 or x < 0 or y < 0):
             #println("EDGE DEATH")
             return True
         
@@ -35,7 +35,7 @@ class Snake:
             newX = self.posX[0] + (direction/2)*40
         
         if(self.should_die(newX, newY)):
-            #println("IM DED")
+            println("IM DED")
             setup()
             
         elif not self.eats(Ax, Ay):
@@ -75,7 +75,7 @@ def setup():
     App = Apple()
     App.random_spot()
     
-    frameRate(10)
+    frameRate(15)
     
     
 def draw_edges(n):
@@ -116,7 +116,7 @@ def draw():
     rect(App.x, App.y, 40, 40)
     
     if(Snk.direction != 0):
-        fill(20,255,20)
+        fill(random(0,255),random(0,255),random(0,255))
         for i in range (len(Snk.posX)):
             rect(Snk.posX[i],Snk.posY[i],40,40)
     else:
